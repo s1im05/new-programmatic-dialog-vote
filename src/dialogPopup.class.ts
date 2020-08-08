@@ -47,7 +47,7 @@ export class DialogPopupClass {
         <div class="${classPrefix}-items">${items}</div>
         <div class="${classPrefix}-yandex">
           Опрос проводится на технологиях<br>
-          <a target="_blank" href="https://surveys.yandex.ru/">Яндекс.Взгляда</a>
+          <a target="_blank" href="https://surveys.yandex.ru/"><span class="${classPrefix}-red">Я</span>ндекс.Взгляда</a>
         </div>
       </div>`;
   }
