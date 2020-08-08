@@ -20,6 +20,10 @@
         sit amet facilisis tellus. Suspendisse nec rhoncus ante.
     </p>
     <p>
+        <img class="img-sample" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80"
+             alt="unsplash">
+    </p>
+    <p>
         In convallis risus nisi, et efficitur nisi volutpat sed. Nulla tempor pretium augue, vel placerat lorem bibendum
         vel. Nulla dapibus lectus vel sem cursus, et bibendum risus iaculis. Sed pulvinar eget lacus quis finibus.
         Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi elementum
@@ -55,21 +59,21 @@
 </div>
 <script src="dist/np-vote.js"></script>
 <script type="application/javascript">
-    const dialog = npDialog({
-      title: 'Какие бренды вам знакомы?',
-      items: [
-        {name: 'В космос', id: 1},
-        {name: 'Космические Путешествия', id: 2},
-        {name: 'Далекие далекие галактики космических путешественников', id: 3},
-        {name: 'Ничего из вышеперечисленного', id: 4}
-        ],
-      url: '?rest=sample',
-      feedback: 'Спасибо за уделённое время!'
-    });
+  var dialog = npDialog({
+    title: 'Какие бренды вам знакомы?',
+    items: [
+      {name: 'В космос', id: 1},
+      {name: 'Космические Путешествия', id: 2},
+      {name: 'Далекие далекие галактики космических путешественников', id: 3},
+      {name: 'Ничего из вышеперечисленного', id: 4}
+    ],
+    url: '?rest=sample',
+    feedback: 'Спасибо за уделённое время!'
+  });
 
-    window.setTimeout(() => {
-      dialog.show();
-    }, 2000);
+  window.setTimeout(() => {
+    dialog.show();
+  }, 2000);
 </script>
 </body>
 </html>
