@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>new-programmatic-dialog-vote</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+</head>
+<body>
+<div class="ipsum">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec est a metus congue sodales sed ut odio.
+        Phasellus elementum a turpis non commodo. Quisque vehicula urna elit, eu volutpat erat fringilla ut. Nulla
+        condimentum faucibus magna quis vulputate. In in nibh eleifend, pulvinar justo ut, maximus nisl. Maecenas ac
+        eleifend dolor. Suspendisse imperdiet est eu tortor scelerisque, mattis tristique ligula vestibulum. Integer
+        fringilla semper nibh et fermentum. Suspendisse ac nulla magna. Sed rhoncus, nisl et auctor tincidunt, risus
+        nibh elementum diam, vehicula imperdiet purus tellus vitae est. Quisque fermentum risus a mollis pharetra. In
+        sit amet facilisis tellus. Suspendisse nec rhoncus ante.
+    </p>
+    <p>
+        In convallis risus nisi, et efficitur nisi volutpat sed. Nulla tempor pretium augue, vel placerat lorem bibendum
+        vel. Nulla dapibus lectus vel sem cursus, et bibendum risus iaculis. Sed pulvinar eget lacus quis finibus.
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi elementum
+        justo nec pulvinar interdum. Morbi hendrerit egestas libero, sed imperdiet risus accumsan eget. Maecenas
+        tristique, quam ut rutrum euismod, augue velit venenatis magna, ut aliquam odio sem maximus tortor. Vestibulum
+        hendrerit dolor lacus, vitae varius nunc eleifend ac. Ut rhoncus mollis ligula ut tristique. Sed eget dignissim
+        sapien. Suspendisse potenti. Aliquam erat volutpat. Pellentesque vulputate turpis a leo cursus, id aliquam nunc
+        feugiat.
+    </p>
+    <p>
+        Integer rhoncus porta mi sit amet suscipit. Sed quis mollis nulla. Suspendisse vel malesuada dolor, vitae
+        maximus augue. Donec feugiat condimentum aliquam. Praesent egestas magna a tempus laoreet. Integer nec diam
+        mauris. Mauris vehicula purus ex, quis varius libero sagittis sed. Nulla dolor erat, rhoncus vel feugiat eget,
+        fringilla vitae enim. Proin finibus varius vulputate. Maecenas ullamcorper vitae elit vel tempus. Mauris posuere
+        mi sem, congue volutpat mauris malesuada tempor. Sed ornare porta ullamcorper.
+    </p>
+    <p>
+        Mauris a nisi bibendum magna rutrum blandit. Nullam hendrerit diam vel dolor volutpat maximus. Suspendisse nibh
+        erat, consequat ut magna sed, pretium iaculis metus. Vivamus cursus metus sed dui bibendum, id luctus ipsum
+        suscipit. Donec vulputate elit id nisi sodales, ut porttitor eros iaculis. Maecenas malesuada arcu metus, quis
+        viverra dui interdum a. Duis vehicula dui lacus. Pellentesque sagittis eros elementum dolor mattis, et tincidunt
+        arcu pharetra.
+    </p>
+    <p>
+        Cras sit amet quam ante. Suspendisse ultricies nibh id dolor interdum, vehicula feugiat nunc malesuada. Donec
+        eleifend quam vitae metus aliquet, nec ultrices leo egestas. Morbi laoreet tempus aliquam. Nulla aliquam semper
+        purus non pellentesque. Suspendisse et nulla egestas, sodales justo sit amet, egestas purus. Donec at tellus sed
+        lectus lobortis faucibus sit amet dictum lorem. Vestibulum in nunc risus. Phasellus nunc felis, maximus non ex
+        eget, malesuada sagittis purus. Maecenas id quam ultrices mauris vulputate euismod. Mauris et eleifend nisi, in
+        lobortis lacus. Aliquam facilisis sapien tortor, eu feugiat felis consectetur a. Sed vitae nunc bibendum nibh
+        placerat blandit efficitur sit amet metus.
+    </p>
+</div>
+<script src="dist/np-vote.js"></script>
+<script type="application/javascript">
+    const dialog = npDialog({
+      title: 'Какие бренды вам знакомы?',
+      items: [
+        {name: 'В космос', id: 1},
+        {name: 'Космические Путешествия', id: 2},
+        {name: 'Далекие далекие галактики космических путешественников', id: 3},
+        {name: 'Ничего из вышеперечисленного', id: 4}
+        ],
+      url: '?rest=sample',
+      feedback: 'Спасибо за уделённое время!'
+    });
+
+    window.setTimeout(() => {
+      dialog.show();
+    }, 200);
+</script>
+</body>
+</html>

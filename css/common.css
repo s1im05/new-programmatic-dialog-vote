@@ -1,0 +1,21 @@
+html, body {
+    height: 100%;
+    font-family: "Roboto Light", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+body {
+    position: relative;
+    margin: 0;
+}
+
+.ipsum {
+    display: flex;
+    flex-direction: column;
+}
+.ipsum > * {
+    max-width: 700px;
+    padding: 20px;
+    margin: auto;
+}
