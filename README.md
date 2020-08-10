@@ -9,7 +9,7 @@ Import main js-source:
 Create dialog-object and provide some config:
 ```
 <script type="application/javascript">
-    const dialog = npDialog({
+    var dialog = npDialog({
       title: 'Dialog main question',
       items: [
         {name: 'Answer one', id: 1},
@@ -20,9 +20,7 @@ Create dialog-object and provide some config:
       url: '?rest=sample',
       feedback: 'Some feedback text for user',
       feedbackDelay: 2000, // delay for feedback text, default 1000 ms
-      container: '#containerId', // selector, default 'body'
-      showSubtitle: false, // show or hide subtitle, default = true
-      mode: 'overlay' // display mode, 'overlay' - full window, 'block' - div-block
+      showSubtitle: false, // show or hide sub-title, default = true
     });
 </script>
 ```
