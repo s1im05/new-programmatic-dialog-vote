@@ -16,19 +16,20 @@ $size: 10px;
     box-sizing: border-box;
   }
 
-  &-overlay {
+  &-overlay,
+  &-block {
     font-size: 2 * $size;
     font-family: "Roboto", Arial, sans-serif;
     color: #fff;
     filter: none;
-    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    background: transparentize(#000, 0.3);
-    animation: fadein 500ms ease-in;
     display: flex;
+    background: transparentize(#000, 0.3);
+    position: fixed;
+    animation: fadein 500ms ease-in;
   }
 
   &-dialog {
@@ -38,19 +39,14 @@ $size: 10px;
     width: 100%;
     min-width: 300px;
     max-width: 700px;
-    max-height: 90vh;
     position: relative;
 
-    &-title {
-      margin-top: 6 * $size;
-    }
-
     &-subtitle {
-      position: absolute;
       padding: $size / 2 $size;
       background: #444;
       font-size: 1.4 * $size;
       border-radius: 2px;
+      display: inline-block;
     }
   }
   &-feedback {
@@ -71,20 +67,24 @@ $size: 10px;
     }
   }
 
-  &-item {
-    font-size: 1.6 * $size;
-    width: 50%;
+  &-item-container {
     padding: $size $size;
     background: #555;
     border-radius: 2px;
-    margin-bottom: $size / 2;
-    border-right: $size/ 2 solid transparentize(#000, 0.5);
     text-overflow: ellipsis;
     overflow: hidden;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+  }
+
+  &-item {
+    box-sizing: border-box;
+    padding: $size / 2;
+    font-size: 1.6 * $size;
+    width: 50%;
 
     @media (max-width: 480px) {
       width: 100%;

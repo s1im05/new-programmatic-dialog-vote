@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+</head>
+<body>
+<div>
+<script src="dist/np-vote.js"></script>
+<script type="application/javascript">
+  npDialog({
+    title: 'Какие бренды вам знакомы?',
+    items: [
+      {name: 'Веселый цветочник', id: 11},
+      {name: 'Цветы', id: 12},
+      {name: 'Самые красивые цветы для самых красивых цветочников', id: 13},
+      {name: 'Цветущие цветки', id: 14}
+    ],
+    url: '?rest=sample&block=1',
+    feedback: 'Спасибо за уделённое время!',
+    feedbackDelay: 2000,
+    showSubtitle: false
+  }).show();
+</script>
+</body>
+</html>
